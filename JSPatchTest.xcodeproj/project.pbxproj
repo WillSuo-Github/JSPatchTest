@@ -15,6 +15,9 @@
 		040565F51CEC3EC400218477 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 040565F31CEC3EC400218477 /* LaunchScreen.storyboard */; };
 		040566001CEC3EC400218477 /* JSPatchTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 040565FF1CEC3EC400218477 /* JSPatchTestTests.m */; };
 		0405660B1CEC3EC400218477 /* JSPatchTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0405660A1CEC3EC400218477 /* JSPatchTestUITests.m */; };
+		0405661C1CEC41A800218477 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0405661A1CEC41A800218477 /* JPEngine.m */; };
+		0405661D1CEC41A800218477 /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 0405661B1CEC41A800218477 /* JSPatch.js */; };
+		0405661F1CEC420D00218477 /* ws.js in Resources */ = {isa = PBXBuildFile; fileRef = 0405661E1CEC420D00218477 /* ws.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		040566061CEC3EC400218477 /* JSPatchTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSPatchTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0405660A1CEC3EC400218477 /* JSPatchTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSPatchTestUITests.m; sourceTree = "<group>"; };
 		0405660C1CEC3EC400218477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040566191CEC41A800218477 /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
+		0405661A1CEC41A800218477 /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
+		0405661B1CEC41A800218477 /* JSPatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPatch.js; sourceTree = "<group>"; };
+		0405661E1CEC420D00218477 /* ws.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ws.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 		040565E41CEC3EC400218477 /* JSPatchTest */ = {
 			isa = PBXGroup;
 			children = (
+				040566181CEC41A800218477 /* JSPatch */,
 				040565E81CEC3EC400218477 /* AppDelegate.h */,
 				040565E91CEC3EC400218477 /* AppDelegate.m */,
 				040565EB1CEC3EC400218477 /* ViewController.h */,
@@ -110,6 +118,7 @@
 				040565F31CEC3EC400218477 /* LaunchScreen.storyboard */,
 				040565F61CEC3EC400218477 /* Info.plist */,
 				040565E51CEC3EC400218477 /* Supporting Files */,
+				0405661E1CEC420D00218477 /* ws.js */,
 			);
 			path = JSPatchTest;
 			sourceTree = "<group>";
@@ -138,6 +147,16 @@
 				0405660C1CEC3EC400218477 /* Info.plist */,
 			);
 			path = JSPatchTestUITests;
+			sourceTree = "<group>";
+		};
+		040566181CEC41A800218477 /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				040566191CEC41A800218477 /* JPEngine.h */,
+				0405661A1CEC41A800218477 /* JPEngine.m */,
+				0405661B1CEC41A800218477 /* JSPatch.js */,
+			);
+			path = JSPatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,8 +262,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0405661F1CEC420D00218477 /* ws.js in Resources */,
 				040565F51CEC3EC400218477 /* LaunchScreen.storyboard in Resources */,
 				040565F21CEC3EC400218477 /* Assets.xcassets in Resources */,
+				0405661D1CEC41A800218477 /* JSPatch.js in Resources */,
 				040565F01CEC3EC400218477 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				040565ED1CEC3EC400218477 /* ViewController.m in Sources */,
+				0405661C1CEC41A800218477 /* JPEngine.m in Sources */,
 				040565EA1CEC3EC400218477 /* AppDelegate.m in Sources */,
 				040565E71CEC3EC400218477 /* main.m in Sources */,
 			);
